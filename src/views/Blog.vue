@@ -10,6 +10,8 @@
           <div class="col-lg-7 p-3 d-flex flex-column align-items-start information">
               <h3><b>{{ blog.title }}</b></h3>
               <p class="desc">{{ blog.summary }}</p>
+              <div class="line col-12">
+              </div>
               <p>{{ blog.author }}</p>
           </div>
         </div> 

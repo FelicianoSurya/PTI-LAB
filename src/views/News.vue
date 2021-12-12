@@ -10,7 +10,9 @@
           <div class="col-lg-7 p-3 d-flex flex-column align-items-start information">
               <h3><b>{{ data.title }}</b></h3>
               <p class="desc">{{ data.summary }}</p>
-              <p>{{ data.published_date }}</p>
+              <div class="line col-12">
+              </div>
+              <p class="date">{{ data.published_date }}</p>
           </div>
         </div> 
     </div>

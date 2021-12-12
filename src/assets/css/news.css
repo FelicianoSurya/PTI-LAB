@@ -9,7 +9,7 @@
 
 .nav ul li a{
     color:white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-decoration: none;
 }
 
@@ -24,6 +24,7 @@
 
 .nav .nav-link:hover:after{
     width: 100%;
+    color:#FFB13E;
 }
 
 .nav .nav-link:hover{
@@ -41,12 +42,8 @@
     box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.36);
 }
 
-.box-news .information{
+.box-news .information p{
     text-align: left;
-}
-
-.box-news .desc{
-    min-height: 20vh;
 }
 
 .box-news img{
@@ -74,7 +71,12 @@
 
 .section-6 .ourteam-card:hover{
     transform: scale(1.1);
-    transition: 0.2s;
+    transition: 0.1s;
     background-color: #FFB13E;
     cursor: grab;
 }
+
+.line{
+    border: 0.2px solid black;
+}
+
