@@ -25,7 +25,7 @@ export default {
   name: 'Login',
   data(){
     return{
-      inputData : {email : '' ,  password : '',remember_me:''}
+      inputData : {email : '' ,  password : ''}
     }
   },
   mounted(){
@@ -33,28 +33,14 @@ export default {
   },
   methods : {
     login(){
-      // var options = {
-      //     method: 'POST',
-      //     url: 'http://localhost:8080/api/login_user',
-          
-      //   };
-      // axios.request(options,this.inputData).then((res)=>{
-      //   console.log(res.data);
-      // }).catch(err=>{
-      //   alert('error');
-      //   this.$session.start();
-      //   this.$session.set('token','error');
-      //   console.log(this.$session)
-      // })
-      var emailAsli = 'admin@gmail.com';
-      var passwordAsli = 'Admin_Admin2';
-      if(this.inputData.email == emailAsli && this.inputData.password == passwordAsli){
-        sessionStorage.setItem('token','lala');
-        alert("login Berhasil");
-        this.cekLogin();
-      }else{
-        alert('email / password salah!');
-      }
+      console.log(this.inputData)
+      axios.post('http://localhost:8080/api/login_user',this.inputData).then((res)=>{
+        sessionStorage.setItem('token',res.data.token);
+          alert('Login Successfull');
+          this.cekLogin();
+      }).catch(err=>{
+        alert('Email atau Password Salah!');
+      })
     },
     cekLogin(){
       if(sessionStorage.getItem('token')){

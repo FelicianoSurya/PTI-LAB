@@ -14,6 +14,9 @@
                 <li class="nav-item">
                     <a class="nav-link"><router-link to="/development">Development</router-link></a>
                 </li>
+                <li class="nav-item" v-show="isList" style="cursor:pointer">
+                    <a class="nav-link" @click="logout()">Logout</a>
+                </li>
             </ul>
         </div> 
     </div>
@@ -25,9 +28,29 @@
 <script>
 export default {
   name: 'Navbar',
-  props: {
-
+  data(){
+    return {
+      isList : 0,
+    }
   },
+  mounted(){
+    this.cekLogin();
+  },
+  methods : {
+    logout(){
+      sessionStorage.removeItem('token');
+      alert("Logout Successfull");
+      this.isList = 0;
+      this.$router.push('login');
+    },
+    cekLogin(){
+        if(sessionStorage.getItem('token')){
+          this.isList = 1;
+        }else{
+          this.isList = 0;
+        }
+    }
+  }
 }
 </script>
 
