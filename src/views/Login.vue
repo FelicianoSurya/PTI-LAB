@@ -3,7 +3,6 @@
   <div>
   
     <div class="container pt-5 p-2 d-flex flex-column justify-content-center">
-        <h1 class="topic">Login</h1>
         <form class="p-3">
             <div class="group-form d-flex flex-column align-items-start">
                 <label for="email">Email</label>

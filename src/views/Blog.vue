@@ -3,13 +3,12 @@
   <div>
   
     <div class="container mt-5 p-2">
-      <h1 class="topic">Blogs</h1>
         <div v-for="blog in blogs" :key="blog.id" class="row mt-5 box-news">
           <div class="col-lg-5 p-0 d-flex justify-content-start">
               <img :src="blog.image" alt="image_media">
           </div>  
           <div class="col-lg-7 p-3 d-flex flex-column align-items-start information">
-              <h3>{{ blog.title }}</h3>
+              <h3><b>{{ blog.title }}</b></h3>
               <p class="desc">{{ blog.summary }}</p>
               <p>{{ blog.author }}</p>
           </div>

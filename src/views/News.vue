@@ -3,13 +3,12 @@
   <div>
   
     <div class="container mt-5 p-2">
-      <h1 class="topic">News</h1>
         <div v-for="data in news" :key="data.id" class="row mt-5 box-news">
           <div class="col-lg-5 p-0 d-flex justify-content-start">
               <img :src="data.media" alt="image_media">
           </div>  
           <div class="col-lg-7 p-3 d-flex flex-column align-items-start information">
-              <h3>{{ data.title }}</h3>
+              <h3><b>{{ data.title }}</b></h3>
               <p class="desc">{{ data.summary }}</p>
               <p>{{ data.published_date }}</p>
           </div>

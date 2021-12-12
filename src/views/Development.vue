@@ -1,11 +1,30 @@
 <template>
   
-  <div>
-  
-    <div class="container-fluid p-0">
-        Ini adalah halaman Develepment
+  <div class="container-fluid p-0">
+    <div class="section-6 py-5" id="team">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-3 col-sm-6 col-8 p-2">
+                  <div class="ourteam-card text-center">
+                      <h3>Feliciano Surya M</h3>
+                      <p class="m-0">( 000 000 43255 )</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 col-8 p-2">
+                  <div class="ourteam-card text-center">
+                      <h3>Dea Noveriyanti</h3>
+                      <p class="m-0">( 000 000 42550 )</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 col-8 p-2">
+                  <div class="ourteam-card text-center">
+                      <h3>Charisma</h3>
+                      <p class="m-0">( 000 000 42550 )</p>
+                  </div>
+              </div>
+            </div>
+        </div>
     </div>
-
   </div>
 
 </template>
