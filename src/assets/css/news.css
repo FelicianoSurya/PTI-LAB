@@ -1,0 +1,67 @@
+.background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../images/news-banner.jpg');
+    background-size: cover;
+    min-height: 50vh;
+    background-position: center;
+
+}
+
+.background{
+    color:white;
+}
+
+.background h1{
+    font-size: 5rem;
+}
+
+.background p{
+    font-size: 2rem;
+}
+
+.nav .nav-item{
+    list-style: none;
+}
+
+.nav ul li a{
+    color:white;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.nav .nav-link:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FFB13E;
+    transition: 0.2s;
+}
+
+.nav .nav-link:hover:after{
+    width: 100%;
+}
+
+.nav .nav-link:hover{
+    color: #FFB13E;
+    transition: 0.2s;
+}
+
+.topic{
+    font-size: 4rem;
+}
+
+.box-news{
+    background-color:#fcfcfc;
+}
+
+.box-news .information{
+    text-align: left;
+}
+
+.box-news .desc{
+    min-height: 20vh;
+}
+
+.box-news img{
+    width: 100%;
+}
