@@ -30,6 +30,7 @@ export default {
   },
   mounted(){
       this.getBlogs(); 
+      this.cekLogin();
   },
   methods : {
       getBlogs(){
@@ -48,6 +49,12 @@ export default {
         }).catch(function (error) {
           console.error(error);
       });
+    },
+    cekLogin(){
+      if(!sessionStorage.getItem('token')){
+          alert('login terlebih dahulu!');
+          this.$router.push({path : "login"});
+      }
     }
   }
 }

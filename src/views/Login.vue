@@ -25,16 +25,41 @@ export default {
   name: 'Login',
   data(){
     return{
-      inputData : {email : '' ,  password : ''}
+      inputData : {email : '' ,  password : '',remember_me:''}
     }
+  },
+  mounted(){
+    this.cekLogin();
   },
   methods : {
     login(){
-      axios.post('http://api-login-pti.herokuapp.com/api/login_user',this.data).then((res)=>{
-        console.log(res.data);
-        // this.$session.start();
-        // this.$session.set('token',this.res.data.token);
-      })
+      // var options = {
+      //     method: 'POST',
+      //     url: 'http://localhost:8080/api/login_user',
+          
+      //   };
+      // axios.request(options,this.inputData).then((res)=>{
+      //   console.log(res.data);
+      // }).catch(err=>{
+      //   alert('error');
+      //   this.$session.start();
+      //   this.$session.set('token','error');
+      //   console.log(this.$session)
+      // })
+      var emailAsli = 'admin@gmail.com';
+      var passwordAsli = 'Admin_Admin2';
+      if(this.inputData.email == emailAsli && this.inputData.password == passwordAsli){
+        sessionStorage.setItem('token','lala');
+        alert("login Berhasil");
+        this.cekLogin();
+      }else{
+        alert('email / password salah!');
+      }
+    },
+    cekLogin(){
+      if(sessionStorage.getItem('token')){
+          this.$router.push({path : "blog"});
+      }
     }
   }
 }
