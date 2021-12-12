@@ -3,6 +3,10 @@
     width:100%;
 }
 
+.background img{
+    width: 100%;
+}
+
 .nav .nav-item{
     list-style: none;
 }
@@ -42,8 +46,17 @@
     box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.36);
 }
 
+.information h3{
+    text-align: left;
+}
+
 .box-news .information p{
     text-align: left;
+    min-height: 80px;
+}
+
+.information .date{
+    width: 100%;
 }
 
 .box-news img{

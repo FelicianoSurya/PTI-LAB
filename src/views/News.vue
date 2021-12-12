@@ -12,7 +12,7 @@
               <p class="desc">{{ data.summary }}</p>
               <div class="line col-12">
               </div>
-              <p class="date">{{ data.published_date }}</p>
+              <p class="date d-flex justify-content-end">{{ data.published_date }}</p>
           </div>
         </div> 
     </div>
