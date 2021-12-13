@@ -3,7 +3,7 @@
   <div>
   
     <div class="container-fluid p-0">
-        <div class="background p-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="background d-flex flex-column justify-content-center align-items-center">
           <img src="../assets/images/logo2.png" alt="">
         </div> 
     </div>

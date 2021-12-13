@@ -2,9 +2,11 @@
   
   <div>
   
-    <div class="container pt-5 p-2 d-flex flex-column justify-content-center">
-        <form class="p-3">
-            <div class="group-form d-flex flex-column align-items-start">
+    <div class="container col-12 pt-5 p-2 d-flex flex-column align-items-center justify-content-center">
+        <form class="p-3 card login-box">
+          <div class="text-center"><h4><b>Login</b></h4></div>
+          <div class="line col-12 my-2"></div>
+            <div class="group-form d-flex flex-column align-items-start my-2">
                 <label for="email">Email</label>
                 <input type="text" v-model="inputData.email" id="email" class="form-control">
             </div>
@@ -12,7 +14,7 @@
                 <label for="password">Password</label>
                 <input type="password" v-model="inputData.password" id="password" class="form-control">
             </div>
-            <input type="button" @click="login()" class="btn btn-info m-2" value="Login">
+            <input type="button" @click="login()" class="btn btn-secondary btn-sm mt-4 mx-5" value="Login">
         </form>
     </div>
 
@@ -59,4 +61,6 @@ export default {
   .btn{
       color:white;
   }
+
+  @import '../assets/css/login.css';
 </style>

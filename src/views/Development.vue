@@ -6,19 +6,19 @@
           <div class="row justify-content-center">
               <div class="col-lg-3 col-sm-6 col-8 p-2">
                   <div class="ourteam-card text-center">
-                      <h3>Feliciano Surya M</h3>
+                      <h4><b>Feliciano Surya M</b></h4>
                       <p class="m-0">( 000 000 43255 )</p>
                   </div>
               </div>
               <div class="col-lg-3 col-sm-6 col-8 p-2">
                   <div class="ourteam-card text-center">
-                      <h3>Dea Noveriyanti</h3>
+                      <h4>Dea Noveriyanti</h4>
                       <p class="m-0">( 000 000 42550 )</p>
                   </div>
               </div>
               <div class="col-lg-3 col-sm-6 col-8 p-2">
                   <div class="ourteam-card text-center">
-                      <h3>Charisma</h3>
+                      <h4>Charisma</h4>
                       <p class="m-0">( 000 000 42550 )</p>
                   </div>
               </div>
@@ -40,5 +40,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  @import '../assets/css/news.css';
+  @import '../assets/css/development.css';
 </style>
