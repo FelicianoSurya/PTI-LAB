@@ -7,12 +7,14 @@
           <div class="col-md-4 p-0 d-flex">
               <img :src="data.media" alt="image_media">
           </div>  
-          <div class="col-md-8 p-3 d-flex flex-column align-items-start information">
+          <div class="col-md-8 p-3 d-flex flex-column align-items-start justify-content-between information">
+            <div>
               <h3><b>{{ data.title }}</b></h3>
               <p class="desc">{{ data.summary }}</p>
-                <div class="card-footer col-12 d-flex justify-content-end text-muted">
+            </div>
+            <div class="card-footer col-12 d-flex justify-content-end text-muted">
                 <h6>{{ data.published_date }}</h6>
-              </div> 
+            </div> 
           </div>
         </div> 
     </div>
