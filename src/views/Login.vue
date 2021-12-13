@@ -37,8 +37,9 @@ export default {
     login(){
       console.log(this.inputData)
       axios.post('http://localhost:8080/api/login_user',this.inputData).then((res)=>{
-        sessionStorage.setItem('token',res.data.token);
+          sessionStorage.setItem('token',res.data.data.token);
           alert('Login Successfull');
+          this.$router.go(); 
           this.cekLogin();
       }).catch(err=>{
         alert('Email atau Password Salah!');
