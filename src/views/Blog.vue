@@ -7,12 +7,14 @@
           <div class="col-lg-4 p-0 d-flex justify-content-start">
               <img :src="blog.image" alt="image_media">
           </div>  
-          <div class="col-lg-8 p-3 d-flex flex-column align-items-start information">
+          <div class="col-lg-8 p-3 d-flex flex-column align-items-start justify-content-between information">
+            <div>
               <h3><b>{{ blog.title }}</b></h3>
               <p class="desc">{{ blog.summary }}</p>
-              <div class="card-footer col-12 d-flex justify-content-start px-2">
-                <p>{{ blog.author }}</p>
-              </div> 
+            </div>
+            <div class="card-footer col-12 d-flex justify-content-start px-2">
+                <p class="m-0">{{ blog.author }}</p>
+            </div> 
           </div>
         </div> 
     </div>
