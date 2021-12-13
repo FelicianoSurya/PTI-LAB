@@ -2,16 +2,17 @@
   
   <div>
   
-    <div class="container mt-5 p-2">
+    <div class="container mt-2 col-md-11 col-sm-9 col-11">
         <div v-for="blog in blogs" :key="blog.id" class="row mt-5 box-news">
-          <div class="col-lg-5 p-0 d-flex justify-content-start">
+          <div class="col-lg-4 p-0 d-flex justify-content-start">
               <img :src="blog.image" alt="image_media">
           </div>  
-          <div class="col-lg-7 p-3 d-flex flex-column align-items-start information">
+          <div class="col-lg-8 p-3 d-flex flex-column align-items-start information">
               <h3><b>{{ blog.title }}</b></h3>
               <p class="desc">{{ blog.summary }}</p>
-              <div class="line col-12"></div>
-              <p>{{ blog.author }}</p>
+              <div class="card-footer col-12 d-flex justify-content-start px-2">
+                <p>{{ blog.author }}</p>
+              </div> 
           </div>
         </div> 
     </div>

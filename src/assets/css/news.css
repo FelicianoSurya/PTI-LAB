@@ -5,7 +5,7 @@
 }
 
 .background img{
-    width: 50%;
+    width: 45%;
 }
 
 .nav .nav-item{
@@ -38,13 +38,13 @@
 }
 
 .topic{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .box-news{
     background-color:#f8f8f8;
     border-color: black;
-    box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.36);
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.116);
 }
 
 .information h3{
@@ -61,7 +61,7 @@
 
 .box-news img{
     width: 100%;
-    height: 300px;
+    padding:10px;
 }
 
 .line{

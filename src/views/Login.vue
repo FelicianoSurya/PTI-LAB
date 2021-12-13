@@ -2,8 +2,8 @@
   
   <div>
   
-    <div class="container col-12 pt-5 p-2 d-flex flex-column align-items-center justify-content-center">
-        <form class="p-3 card login-box">
+    <div class="pt-5 p-2 d-flex align-items-center justify-content-center">
+        <form class="p-4 col-md-8 card login-box col-8">
           <div class="text-center"><h4><b>Login</b></h4></div>
           <div class="line col-12 my-2"></div>
             <div class="group-form d-flex flex-column align-items-start my-2">
@@ -14,7 +14,9 @@
                 <label for="password">Password</label>
                 <input type="password" v-model="inputData.password" id="password" class="form-control">
             </div>
-            <input type="button" @click="login()" class="btn btn-secondary btn-sm mt-4 mx-5" value="Login">
+            <div class="justify-content-center d-flex">
+              <input type="button" @click="login()" class="btn btn-secondary mt-4 col-md-4 " value="Login">
+            </div>
         </form>
     </div>
 
@@ -57,7 +59,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   form{
-      max-width: 400px;
+      max-width: 500px;
   }
   .btn{
       color:white;

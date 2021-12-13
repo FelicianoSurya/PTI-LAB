@@ -4,22 +4,25 @@
     <div class="section-6 py-5" id="team">
       <div class="container">
           <div class="row justify-content-center">
-              <div class="col-lg-3 col-sm-6 col-8 p-2">
+              <div class="col-lg-3 col-sm-6 col-8 p-3">
                   <div class="ourteam-card text-center">
+                      <img src="../assets/images/Ano.png" width="100%" alt="">
                       <h4><b>Feliciano Surya M</b></h4>
                       <p class="m-0">( 000 000 43255 )</p>
                   </div>
               </div>
-              <div class="col-lg-3 col-sm-6 col-8 p-2">
+              <div class="col-lg-3 col-sm-6 col-8 p-3">
                   <div class="ourteam-card text-center">
-                      <h4>Dea Noveriyanti</h4>
+                      <img src="../assets/images/Dea.png" width="100%" alt="">
+                      <h4><b>Dea Noveriyanti</b></h4>
                       <p class="m-0">( 000 000 42550 )</p>
                   </div>
               </div>
-              <div class="col-lg-3 col-sm-6 col-8 p-2">
+              <div class="col-lg-3 col-sm-6 col-8 p-3">
                   <div class="ourteam-card text-center">
-                      <h4>Charisma</h4>
-                      <p class="m-0">( 000 000 42550 )</p>
+                      <img src="../assets/images/Charisma.png" width="100%" alt="">
+                      <h4><b>Charisma Christ A</b></h4>
+                      <p class="m-0">( 000 000 43903 )</p>
                   </div>
               </div>
             </div>

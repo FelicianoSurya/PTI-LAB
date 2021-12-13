@@ -18,3 +18,7 @@
     background-color: #ffbb55;
     cursor: grab;
 }
+
+.ourteam-card img {
+    margin-bottom: 10px;
+}

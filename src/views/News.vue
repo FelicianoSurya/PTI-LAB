@@ -2,16 +2,17 @@
   
   <div>
   
-    <div class="container mt-5 p-0">
+    <div class="container mt-2 col-md-11 col-sm-9 col-11">
         <div v-for="data in news" :key="data.id" class="row mt-5 box-news">
-          <div class="col-lg-5 p-0 d-flex">
+          <div class="col-md-4 p-0 d-flex">
               <img :src="data.media" alt="image_media">
           </div>  
-          <div class="col-lg-7 p-3 d-flex flex-column align-items-start information">
+          <div class="col-md-8 p-3 d-flex flex-column align-items-start information">
               <h3><b>{{ data.title }}</b></h3>
               <p class="desc">{{ data.summary }}</p>
-              <div class="line col-12"></div>
-              <p class="date d-flex justify-content-end">{{ data.published_date }}</p>
+                <div class="card-footer col-12 d-flex justify-content-end text-muted">
+                <h6>{{ data.published_date }}</h6>
+              </div> 
           </div>
         </div> 
     </div>
